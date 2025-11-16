@@ -382,6 +382,93 @@ footer {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/*футер*/
+
+.footer {
+  padding: 100px 0;
+}
+.fot-link {
+  margin-bottom: 16px;
+}
+
+.p-footer {
+  color: #f4f4fd;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  max-width: 264px;
+}
+.p-subscribe {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.foot-svg {
+  margin-top: 16px;
+  gap: 16px;
+  max-width: 208px;
+}
+.foot-svg a:hover {
+  background-color: #31d0aa;
+}
+.footer-div {
+  display: flex;
+}
+.social-footer {
+  margin-left: 120px;
+}
+
+.subscribe-div {
+  margin-left: 80px;
+}
+.form-footer {
+  gap: 24px;
+  display: flex;
+  align-items: flex-end;
+}
+.input-subscribe {
+  font-family: inherit;
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  padding-left: 16px;
+  margin-top: 16px;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+.input-subscribe::placeholder {
+  color: #ffffff;
+}
+.btn-subscribe {
+  font-family: "Roboto", sans-serif;
+  margin-left: 24px;
+  min-width: 165px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+}
+.svg-airplan {
+  margin-left: 16px;
+}
+
 /* модальное окно */
 
 .modal-overley {
@@ -398,21 +485,26 @@ footer {
   align-items: center;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-overley.is-open {
+.modal-overley,
+.is-open {
   opacity: 1;
   pointer-events: auto;
 }
 
 .modal {
+  position: absolute;
+
   width: 408px;
-  background: #ffffff;
+  min-height: 584px;
   padding: 24px;
   border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  background: #fcfcfc;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .div-form,
 .form-modal,
@@ -423,10 +515,13 @@ footer {
   width: 100%;
   padding: 24px 0 0 0;
 }
+.div-form {
+  padding-top: 48px;
+}
 
 .div-modal {
   position: relative;
-  padding: 0;
+  padding-top: 0;
   align-items: start;
 }
 .icon-modal-svg {
@@ -474,6 +569,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -555,91 +653,4 @@ footer {
 .checkbox:checked + .mini-text-modal > .custom-checkbox {
   background-color: #404bbf;
   fill: #f4f4fd;
-}
-/*футер*/
-
-.footer {
-  padding: 100px 0;
-}
-.fot-link {
-  margin-bottom: 16px;
-}
-
-.p-footer {
-  color: #f4f4fd;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  max-width: 264px;
-}
-.p-subscribe {
-  margin-bottom: 16px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-}
-.foot-svg {
-  margin-top: 16px;
-  gap: 16px;
-  max-width: 208px;
-}
-.foot-svg a:hover {
-  background-color: #31d0aa;
-}
-.footer-div {
-  display: flex;
-}
-.social-footer {
-  margin-left: 120px;
-}
-
-.subscribe-div {
-  margin-left: 80px;
-}
-.form-footer {
-  gap: 24px;
-  display: flex;
-  align-items: flex-end;
-}
-.input-subscribe {
-  font-family: inherit;
-  width: 264px;
-  height: 40px;
-  border: 1px solid #ffffff;
-  border-radius: 4px;
-  padding-left: 16px;
-  margin-top: 16px;
-  background-color: transparent;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: #ffffff;
-}
-.input-subscribe::placeholder {
-  color: #ffffff;
-}
-.btn-subscribe {
-  font-family: "Roboto", sans-serif;
-  margin-left: 24px;
-  width: 165px;
-  height: 40px;
-  background-color: #4d5ae5;
-  border-radius: 4px;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  cursor: pointer;
-  background-color: #4d5ae5;
-  border: none;
-}
-.svg-airplan {
-  margin-left: 16px;
 }
