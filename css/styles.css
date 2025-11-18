@@ -516,7 +516,9 @@ footer {
   align-items: center;
   width: 100%;
 }
-
+.div-form {
+  margin-bottom: 8px;
+}
 .div-modal {
   position: relative;
   padding-top: 0;
@@ -543,10 +545,12 @@ footer {
   width: 100%;
 }
 .label-modal {
+  font-size: 12px;
   margin-bottom: 4px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   display: block;
+  color: #8e8f99;
 }
 .label-modal:first-child {
   margin-top: 0;
