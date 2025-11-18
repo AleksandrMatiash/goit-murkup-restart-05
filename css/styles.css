@@ -524,10 +524,7 @@ footer {
   padding-top: 0;
   align-items: start;
 }
-.div-wrap {
-  width: 100%;
-  margin-bottom: 8px;
-}
+
 .icon-modal-svg {
   position: absolute;
   top: 50%;
@@ -591,8 +588,7 @@ footer {
   background-color: #e7e9fc;
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-close:hover,
@@ -600,9 +596,6 @@ footer {
   background-color: #404bbf;
   fill: #ffffff;
   border: none;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.btn-close-svg:hover {
 }
 
 .btn-send {
