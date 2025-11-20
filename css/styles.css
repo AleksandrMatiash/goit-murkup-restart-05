@@ -203,7 +203,7 @@ footer {
 }
 
 /*секция 2 */
-.visualy-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -517,7 +517,7 @@ footer {
   width: 100%;
 }
 .div-form {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .div-modal {
   position: relative;
@@ -543,6 +543,7 @@ footer {
   line-height: 1.17;
   letter-spacing: 0.04em;
 }
+
 .label-modal {
   font-size: 12px;
   margin-bottom: 4px;
@@ -550,9 +551,6 @@ footer {
   letter-spacing: 0.04em;
   display: block;
   color: #8e8f99;
-}
-.label-modal:first-child {
-  margin-bottom: 0;
 }
 
 .input-modal {
@@ -585,9 +583,9 @@ footer {
   background-color: #e7e9fc;
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-close:hover,
@@ -600,7 +598,7 @@ footer {
 .btn-send {
   font-family: "Roboto", sans-serif;
   background-color: #4d5ae5;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   border: none;
   border-radius: 4px;
@@ -675,4 +673,7 @@ footer {
   background-color: #404bbf;
   fill: #f4f4fd;
   border: none;
+}
+.privacy-link {
+  color: #4d5ae5;
 }
